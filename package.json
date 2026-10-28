@@ -1,7 +1,7 @@
 {
   "name": "cosmic-reels",
   "version": "1.0.0",
-  "description": "A React Three Fiber Project",
+  "description": "Instagram cosmic videos from React Three Fiber and Remotion",
   "repository": {},
   "license": "UNLICENSED",
   "engines": {
@@ -9,17 +9,18 @@
   },
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^10.7.9",
     "@react-three/fiber": "9.2.0",
     "@remotion/cli": "4.0.537",
     "@remotion/media": "4.0.537",
     "@remotion/three": "4.0.537",
     "@remotion/zod-types": "4.0.537",
+    "mediabunny": "1.61.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.537",
     "three": "0.178.0",
-    "zod": "4.5.4",
-    "mediabunny": "1.61.6"
+    "zod": "4.5.4"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.537",
@@ -34,7 +35,14 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "render:flight": "remotion render NightFlightReel out/night-flight-reel.mp4",
+    "render:meteors": "remotion render MeteorShowerReel out/meteor-shower-reel.mp4",
+    "render:supernova": "remotion render SupernovaReel out/supernova-reel.mp4",
+    "render:blackhole": "remotion render BlackHoleReel out/black-hole-reel.mp4",
+    "render:nebula": "remotion render NebulaFlyReel out/nebula-n49-push.mp4",
+    "render:stills": "remotion render NebulaFlyReel out/nebula-n49-push.mp4 && remotion render N49RevealReel out/nebula-n49-reveal.mp4 && remotion render SouthernCrabOrbitReel out/nebula-crab-orbit.mp4 && remotion render StarNurseryRiseReel out/nebula-nursery-rise.mp4 && remotion render Snr0519PunchReel out/nebula-snr0519-punch.mp4 && remotion render Snr1006TrackReel out/nebula-snr1006-track.mp4 && remotion render M82GlideReel out/nebula-m82-glide.mp4",
+    "render:sombrero": "remotion render SombreroReel out/sombrero-reel.mp4 --port=3124"
   },
   "allowScripts": {
     "esbuild": false
